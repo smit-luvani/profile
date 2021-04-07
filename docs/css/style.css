@@ -1266,11 +1266,12 @@ info bar
     left: 45% !important;
 }
 
-.art-info-bar .art-lang-skills .art-lang-skills-item .art-cirkle-progress .progressbar-text:after {
+
+/* .art-info-bar .art-lang-skills .art-lang-skills-item .art-cirkle-progress .progressbar-text:after {
     content: '%';
     position: absolute;
     right: -7px;
-}
+} */
 
 .art-info-bar .art-hard-skills .art-hard-skills-item {
     margin-bottom: 15px;

@@ -103,16 +103,16 @@ $(function() {
         delay: 2500,
         trailWidth: 7,
         step: function(state, circle) {
-            var value = Math.round(circle.value() * 100);
+            var value = Math.round(circle.value() * 90);
             if (value === 0) {
                 circle.setText('');
             } else {
-                circle.setText(value);
+                circle.setText('90 %');
             }
         }
     });
 
-    bar.animate(1);
+    bar.animate(0.9);
 
     var bar = new ProgressBar.Circle(circleprog2, {
         strokeWidth: 7,
@@ -121,16 +121,16 @@ $(function() {
         delay: 2700,
         trailWidth: 7,
         step: function(state, circle) {
-            var value = Math.round(circle.value() * 100);
+            var value = Math.round(circle.value() * 98);
             if (value === 0) {
                 circle.setText('');
             } else {
-                circle.setText(value);
+                circle.setText('2 Hr');
             }
         }
     });
 
-    bar.animate(1);
+    bar.animate(0.98);
 
     var bar = new ProgressBar.Circle(circleprog3, {
         strokeWidth: 7,
@@ -143,7 +143,7 @@ $(function() {
             if (value === 0) {
                 circle.setText('');
             } else {
-                circle.setText(value);
+                circle.setText('17/7');
             }
         }
     });
@@ -182,7 +182,7 @@ $(function() {
         }
     });
 
-    bar.animate(1);
+    bar.animate(0.99);
 
     var bar = new ProgressBar.Line(lineprog3, {
         strokeWidth: 1.72,
@@ -233,7 +233,7 @@ $(function() {
         }
     });
 
-    bar.animate(0.7);
+    bar.animate(0.4);
 
     // Contact form
     $('.art-input').keyup(function() {
