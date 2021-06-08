@@ -107,12 +107,12 @@ $(function() {
             if (value === 0) {
                 circle.setText('');
             } else {
-                circle.setText('90 %');
+                circle.setText('5 / 5');
             }
         }
     });
 
-    bar.animate(0.9);
+    bar.animate(1);
 
     var bar = new ProgressBar.Circle(circleprog2, {
         strokeWidth: 7,
