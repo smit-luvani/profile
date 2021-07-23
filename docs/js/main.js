@@ -34,15 +34,13 @@ $(function() {
             delay: 200,
             duration: 600,
             easing: 'linear',
-            complete: function(anim) {
-
-            }
+            complete: function(anim) {}
         });
         anime({
             targets: '.art-preloader',
             opacity: [1, 0],
-            delay: 2200,
-            duration: 400,
+            delay: 2000,
+            duration: 1500,
             easing: 'linear',
             complete: function(anim) {
                 $('.art-preloader').css('display', 'none');
@@ -53,7 +51,7 @@ $(function() {
     var bar = new ProgressBar.Line(preloader, {
         strokeWidth: 1.7,
         easing: 'easeInOut',
-        duration: 1400,
+        duration: 3000,
         delay: 750,
         trailWidth: 1.7,
         svgStyle: {
@@ -61,7 +59,7 @@ $(function() {
             height: '100%'
         },
         step: (state, bar) => {
-            bar.setText(Math.round(bar.value() * 100) + ' %');
+            // bar.setText(Math.round(bar.value() * 100) + ' %');
         }
     });
 
@@ -125,7 +123,7 @@ $(function() {
             if (value === 0) {
                 circle.setText('');
             } else {
-                circle.setText('2 Hr');
+                circle.setText('24 Hr');
             }
         }
     });
@@ -143,7 +141,7 @@ $(function() {
             if (value === 0) {
                 circle.setText('');
             } else {
-                circle.setText('17/7');
+                circle.setText('17*7');
             }
         }
     });
@@ -233,7 +231,7 @@ $(function() {
         }
     });
 
-    bar.animate(0.4);
+    bar.animate(0.8);
 
     // Contact form
     $('.art-input').keyup(function() {
