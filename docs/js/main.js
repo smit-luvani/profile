@@ -31,7 +31,7 @@ $(function () {
         anime({
             targets: '.art-preloader .art-preloader-content',
             opacity: [0, 1],
-            delay: 200,
+            delay: 0,
             duration: 600,
             easing: 'linear',
             complete: function (anim) { }
@@ -39,7 +39,7 @@ $(function () {
         anime({
             targets: '.art-preloader',
             opacity: [1, 0],
-            delay: 2000,
+            delay: 500,
             duration: 1500,
             easing: 'linear',
             complete: function (anim) {
@@ -83,7 +83,7 @@ $(function () {
                 $(this).prop('Counter', 0).animate({
                     Counter: $(this).text()
                 }, {
-                    duration: 2000,
+                    duration: 1500,
                     easing: 'linear',
                     step: function (now) {
                         $(this).text(Math.ceil(now));
@@ -236,7 +236,7 @@ $(function () {
         }
     });
 
-    bar.animate(0.9);
+    bar.animate(1);
 
     // Contact form
     $('.art-input').keyup(function () {
